@@ -2,10 +2,9 @@ from empleado import *
 from validar_entrada import *
 
 
-v=Validar()
 
-nombre = v.pedir(v.validar_nombre)
-sueldo = v.pedir(v.validar_sueldo)
+nombre = Validar.pedir(Validar.validar_nombre)
+sueldo = Validar.pedir(Validar.validar_sueldo)
 
 
 empleado1 = Empleado(nombre,sueldo)
