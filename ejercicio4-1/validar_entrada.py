@@ -1,0 +1,23 @@
+class Validar:
+
+    def validar_sueldo(self):
+        n = int(input("¿Sueldo? "))
+        if n <= 0:
+            raise ValueError("El sueldo debe ser mayor que 0.")
+        return n
+
+    def validar_nombre(self):
+        nombre = input("¿Nombre? ").strip()
+        if len(nombre) == 0:
+            raise ValueError("El nombre no puede estar vacío")  # corregido
+        return nombre
+
+    def pedir(self, validar):
+        while True:
+            try:
+                return validar()
+            except ValueError as e:
+                print("Error:", e)
+            except KeyboardInterrupt:
+                print("\nInterrumpido por el usuario")
+                break
