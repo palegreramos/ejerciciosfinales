@@ -1,5 +1,5 @@
 from empleado import *
-from validar_entrada import *
+from validar_entrada import Validar
 
 
 
