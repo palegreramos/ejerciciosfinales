@@ -11,7 +11,7 @@ class Validar:
     def validar_nombre(self):
         nombre = input("¿Nombre? ").strip()
         if len(nombre) == 0:
-            raise ValueError("El nombre no puede estar vacío")  # corregido
+            raise ValueError("El nombre no puede estar vacío") 
         return nombre
 
     @staticmethod
